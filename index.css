@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+    --pri-clr-voit:hsl(257, 40%, 49%);
+    --pri-clr-soft:hsl(300, 69%, 71%);
+
+
+    --pri-font:'Open Sans', sans-serif;
+    --sec-fonr:'Poppins', sans-serif;
+    --padd:1em;
+}
+
+body{
+    padding: 1em;
+    margin: 0 auto;
+    background-color: var(--pri-clr-voit);
+    color: white;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+    width: 6.5em;
+    padding: 1.5rem 0 2rem 0;
+}
+#back{
+    width: 100%;
+}
+h1{
+    padding: 1rem 0;
+    text-align: center;
+    font-family:var(--sec-fonr);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+p{
+    font-size: 0.8rem;
+    font-weight:lighter;
+    text-align:center;
+    line-height: 1.5;
+    font-family: var(--pri-font);
+}
+.button{
+    border: 0;
+    display: flex;
+    margin: 0 auto;
+    padding: 0.7em 5em;
+    border-radius: 1rem;
+    font-family: var(--pri-font);
+    font-size: 0.7rem;
+    color:var(--pri-clr-voit);
+}
+.svg{
+    width:var(--padd);
+    padding: 0.4rem;
+    margin: 0.1rem;
+    height: var(--padd);
+    border: 1px solid white;
+    border-radius: 50%;
+}
+footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    width: 100%;
+}
+@media screen and (min-width: 600px){
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 2em;
+        justify-content: center;
+    }
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        margin: 1rem;
+        width: 80%;
+    }
+    .image{
+        min-width: 20em;
+        flex-grow: 2;
+    }
+    p,h1{
+        text-align: left;
+        padding: 0.5rem 1rem;
+        margin: 0;
+
+    }
+    p{
+        font-size:1.4vw;
+        padding-bottom: 1.5rem;
+    }
+    h1{
+        width:100%;
+        font-size: 3.5vw;
+    }
+}
